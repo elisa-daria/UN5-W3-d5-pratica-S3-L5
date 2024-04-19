@@ -30,7 +30,7 @@ public class User implements UserDetails {
     @OneToMany(mappedBy = "user")
     private List<Event>eventList;
 
-    public User(String name, String surname, LocalDate dateOfBirth, String avatar, String email, String password,UserRole role) {
+    public User(String name, String surname, LocalDate dateOfBirth, String avatar, String email, String password) {
         this.name = name;
         this.surname = surname;
         this.dateOfBirth = dateOfBirth;
