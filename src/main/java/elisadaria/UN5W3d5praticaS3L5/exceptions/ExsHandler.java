@@ -35,7 +35,7 @@ public class ExsHandler {
     @ExceptionHandler(UnAuthorizedEx.class)
     @ResponseStatus(HttpStatus.UNAUTHORIZED)
     public ErrRespDTO handle401(UnAuthorizedEx ex){
-        return new ErrRespDTO("NON AUTORIZZATO,problemi con il token",LocalDateTime.now());
+        return new ErrRespDTO("NON AUTORIZZATO, problemi con il token",LocalDateTime.now());
     }
 
 }
